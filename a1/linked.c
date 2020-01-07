@@ -1,0 +1,1 @@
+int linked(double * doNotChange, int size); // returns 0 ok or -1 error, do not exit program in this function
