@@ -1,5 +1,6 @@
 CC=gcc
-CFLAGS= -g -Wall -Werror -pedantic
+CFLAGS= -g -Wall -Werror -pedantic -pthreads
+LDLIBS= -lpthread -rt
 #CFLAGS= -O
 
 a1:	a1.o array.o error.o linked.O
