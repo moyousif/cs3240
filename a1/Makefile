@@ -1,17 +1,17 @@
 CC=gcc
-CFLAGS= -g -Wall -Werror -pedantic -pthreads
-LDLIBS= -lpthread -rt
+CFLAGS= -g -Wall -Werror -pedantic
+CFLAGS += -pthread
+LDLIBS+= -lpthread -lrt
 #CFLAGS= -O
 
-a1:	a1.o array.o error.o linked.O
+a1:	a1.o array.o error.o
 
-a1.o: apue.h array.h linked.h
-array.o: array.h
-linked.o: linked.h
+a1.o: apue.h array.h
+array.o: array.c apue.h
 
 
 clean:
-		rm *.o a1
+		rm -f *.o a1 *.csv
 
 run:
-		./a1
+		./source
