@@ -14,5 +14,5 @@ int main(int argc, char *argv[]){
     int size = 0;
     size = (int) rand() % 2000 + 10000;
 
-    array((createArray(size)), size);
+    arrayProcess((createArray(size)), size);
 }
