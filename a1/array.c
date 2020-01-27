@@ -18,7 +18,7 @@ return array;
 int arrayProcess(double *array, int size){
     clock_t start, end;
     int timeUsed;
-    start = clock();    
+    start = clock();       
     struct arraysize thread1 = {array, size};
 
     printf("In array.\nSize: %i", size);
